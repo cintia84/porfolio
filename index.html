@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="ESTILOS/estilo.css">
+</head>
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="IMAGENES/fotoporfolio.jpg">Cintia</a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">SKILLS</a></li>
+                    <li><a href="#curriculum" onclick="seleccionar()">CURRICULUM</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+
+    <!-- SECCION INICIO -->
+    <section id="inicio" class="inicio">
+        <div class="contenido-banner">
+            <div class="contenedor-img">
+                <img src="IMAGENES/foto.jpeg">
+            </div>
+            <h1>CINTIA ALVAREZ</h1>
+            <h2>Desarrolladora de Software</h2>
+            <div class="redes">
+                <a href="https://web.facebook.com/?locale=es_LA&_rdc=1&_rdr"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="https://github.com/cintia84"><i class="fab fa-github"></i></a>
+                <a href="https://wa.me/3462678912?text=Hola,%20quiero%20%20hacer%20una%20consulta" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+                <a href="https://www.linkedin.com/in/cintiaalvarez/"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <h2>Sobre Mí</h2>
+            <p><span>Hola, soy Cintia.</span> Una Desarrolladora Web en formación y apasionada por la innovación tecnológica. Mi objetivo es generar contenido visual creativo, original y completamente funcional, adaptándome a las nuevas tendendencias y a las necesidades individuales de cada cliente.  </p>
+
+            <div class="fila">
+                <!-- datos personales -->
+                <div class="col">
+                    <h3>Datos Personales</h3>
+                    <ul>
+                        <li>
+                            <strong>Cumpleaños</strong>
+                            28-11-1984
+                        </li>
+                        <li>
+                            <strong>Teléfono</strong>
+                            3462 678912
+                        </li>
+                        <li>
+                            <strong>Email</strong>
+                            cinal84@hotmail.com
+                        </li>
+                        <li>
+                            <strong>GitHub</strong>
+                            https://github.com/cintia84
+                        </li>
+                        
+                        <li>
+                            <strong>Cargo</strong>
+                            <span>FREELANCE</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- intereses -->
+                <div class="col">
+                    <h3>Intereses</h3>
+                    <div class="contenedor-intereses">
+                        
+                        <div class="interes">
+                            <i class="fa-solid fa-headphones"></i>
+                            <span>MÚSICA</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-plane"></i>
+                            <span>VIAJAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-book"></i>
+                            <span>APRENDER</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-person-hiking"></i>
+                            <span>DEPORTE</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fas fa-utensils"></i>
+                            <span>COCINAR</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-code"></i>
+                            <span>PROGRAMACIÓN</span>
+                        </div>
+                        <div class="interes">
+                            <i class="fa-solid fa-camera"></i>
+                            <span>FOTOS</span>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button>
+                Descargar CV <i class="fa-solid fa-download"></i>
+                <span class="overlay"></span>
+            </button>
+        </div>
+    </section>
+
+    <!-- SECCION SKILLS -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>Skills</h2>
+            <div class="fila">
+                <!-- Technical Skill -->
+                <div class="col">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Photoshop</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>10%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Wordpress</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>25%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proactividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Professional Skills -->
+                <div class="col">
+                    <h3>Professional Skills</h3>
+                    <div class="skill">
+                        <span>Comunicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Trabajo en Equipo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>50%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Dedicación</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>95%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Proyect Management</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>30%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CURRICULUM -->
+    <section id="curriculum" class="curriculum">
+        <div class="contenido-seccion">
+            <h2>Curriculum</h2>
+            <div class="fila">
+                <div class="col izquierda">
+                    <h3>Educación</h3>
+                    
+                    <div class="item izq">
+                        <h4> </h4>
+                        <span class="casa">Potrero Digital</span>
+                        <span class="fecha">2022</span>
+                        <p>Programación Web Front End </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4> </h4>
+                        <span class="casa">Potrero Digital</span>
+                        <span class="fecha">2023</span>
+                        <p>Programación Web Back End </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                    <div class="item izq">
+                        <h4>Ciberseguridad </h4>
+                        <span class="casa">Capacitación de Google</span>
+                        <span class="fecha">Desde noviembre 2023 hasta marzo 2024</span>
+                        <p>8 Modulos <br> Fundamentos de seguridad <br> Gestión de los Riesgos de Seguridad <br>Conexión y Protección de redes y seguridad de redes <br>
+                            Linux y SQL <br> Activos, amenazas y vulnerabilidades. <br> Detección y respuesta <br> Automatización de tareas con Python <br> Práctica.
+
+                        </p>
+                        <div class="conectori">
+                            <div class="circuloi"></div>
+                        </div>
+                    </div>
+                </div>
+
+              <!-- <div class="col derecha">
+                    <h3>Experiencia de trabajo</h3>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                    <div class="item der">
+                        <h4>Front Developer</h4>
+                        <span class="casa">Nombre de Compañía</span>
+                        <span class="fecha">2005 - 2008</span>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quis, cumque repellat, tempora recusandae aliquam nemo esse natus impedit, nostrum temporibus veritatis eaque soluta aperiam id repudiandae fugiat deserunt! Explicabo, veritatis?</p>
+                        <div class="conectord">
+                            <div class="circulod"></div>
+                        </div>
+                    </div>
+                </div>-->
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION PORTFOLIO -->
+    <section id="portfolio" class="portfolio">
+        <div class="contenido-seccion">
+            <h2>PORTFOLIO</h2>
+            <div class="galeria">
+                <div class="proyecto">
+                    <img src="IMAGENES/Appdegatos.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>App de Gatos</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/modal.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Anexo de modal</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/Calculadora.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Calculadora</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/tarjetapresentacion.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Tarjeta de Presentación</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/reproductor.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Reproductor de Música</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/lista.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Listas diarias</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/flappy bird.jpg" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Juego Flappy Bird</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/galeria animada.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Galeria animada</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/generador de contraseñas.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Generador de contraseñas</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/generador de qr.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Genrador de QR</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/landingpage.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Landing Page</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/loginbootstrap.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Login con Bootstrap</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/frapuchino.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Frapuccino</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/formulario.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>formulario</p>
+                    </div>
+                </div>
+                <div class="proyecto">
+                    <img src="IMAGENES/equipo de trabajo.png" alt="">
+                    <div class="overlay">
+                        <h3></h3>
+                        <p>Equipo de Trabajo</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION CONTACTO -->
+    <section id="contacto" class="contacto">
+        <div class="contenido-seccion">
+            <h2>CONTACTO</h2>
+            <div class="fila">
+                <!-- Formulario -->
+                <div class="col">
+                    <input type="text" placeholder="Tú Nombre">
+                    <input type="text" placeholder="Número telefónico">
+                    <input type="text" placeholder="Dirección de correo">
+                    <input type="text" placeholder="Tema">
+                    <textarea name="" id="" cols="30" rows="10" placeholder="Mensaje"></textarea>
+                    <button>
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                </div>
+                <!-- Mapa -->
+                <div class="col">
+                    <img src="img/ubicacion.png" alt="">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2380.6874349351065!2d-61.977092025710576!3d-33.72777831176598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c8649945feaee9%3A0x2cedb93a9adf14bc!2sGoumond%20348%2C%20S2600%20Venado%20Tuerto%2C%20Santa%20Fe!5e1!3m2!1ses!2sar!4v1729652812052!5m2!1ses!2sar" width="600" height="540" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="info">
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-location-dot"></i>
+                               Felix Goumond 348, Venado Tuerto, Santa Fe, Argentina.
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-mobile-screen"></i>
+                                Llamanos: 3462- 678912
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-envelope"></i>
+                                Email: cinal84@hotmail.com
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#"><i class="fa-brands fa-skype"></i></a>
+            <a href="https://www.linkedin.com/in/cintiaalvarez/"><i class="fa-brands fa-linkedin-in"></i></a>
+           
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
